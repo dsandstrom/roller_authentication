@@ -2,6 +2,7 @@
 
 module RollerAuthentication
   class AuthenticationController < ApplicationController
+    skip_before_action :authenticate
     before_action :set_options, only: :login
 
     def login
