@@ -1,0 +1,13 @@
+<%= content_tag :h1, 'Login' %>
+
+<p>
+  This is the example login system, it should only be used for testing purposes.
+  Please see the instructions on how to add a real one.
+</p>
+
+<%= form_tag login_path, method: :post, class: "form" do %>
+  <%= label_tag :current_user, 'Pick a user to login as' %>
+  <%= select_tag :current_user, grouped_options_for_select(@options) %>
+
+  <%= submit_tag 'Login' %>
+<% end %>
