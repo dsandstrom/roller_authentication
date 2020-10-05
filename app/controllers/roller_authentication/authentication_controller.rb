@@ -8,7 +8,7 @@ module RollerAuthentication
     before_action :set_authenticator, only: %i[verify logout]
 
     def login
-      @users = User.joins(:employee)
+      # TODO: redirect_to main_app.root_url if current_user
     end
 
     def verify
@@ -27,15 +27,15 @@ module RollerAuthentication
 
     private
 
+      def set_users
+        @users = RollerAuthentication.config.users
+      end
+
       def set_user_options
         @user_options =
           User::VALID_EMPLOYEE_TYPES.map do |type|
             [type, users_for_type(type)]
           end
-      end
-
-      def set_users
-        @users = User.joins(:employee)
       end
 
       def set_authenticator

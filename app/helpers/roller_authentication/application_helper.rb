@@ -1,16 +1,10 @@
 module RollerAuthentication
   module ApplicationHelper
-    def current_user=(user)
-      @current_user = user
-    end
-
-    def current_user
-      @current_user
-    end
+    attr_accessor :current_user
 
     def authenticate
       authenticator = DummyAuthenticator.new(
-        users: User.joins(:employee),
+        users: RollerAuthentication.config.users,
         session: session
       )
 
