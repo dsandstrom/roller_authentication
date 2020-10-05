@@ -15,7 +15,7 @@ module RollerAuthentication
 
     def authenticate
       cookie = session[SESSION_KEY]
-      user = User.find_by_email(cookie) if cookie
+      user = users.find_by_email(cookie) if cookie
       user || false
     end
 
