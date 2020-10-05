@@ -1,5 +1,7 @@
-require "roller_authentication/engine"
-require "roller_authentication/dummy_authenticator"
+# frozen_string_literal: true
+
+require 'roller_authentication/engine'
+require 'roller_authentication/dummy_authenticator'
 
 # TODO: raise error if config.users not set
 

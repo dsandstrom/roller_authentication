@@ -8,9 +8,9 @@ module RollerAuthentication
     before_action :set_authenticator
 
     def login
-      if @authenticator&.authenticate
-        redirect_to main_app.root_url, alert: 'Already logged in.'
-      end
+      return unless @authenticator&.authenticate
+
+      redirect_to main_app.root_url, alert: 'Already logged in.'
     end
 
     def verify

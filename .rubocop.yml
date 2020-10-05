@@ -1,0 +1,12 @@
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: enable
+
+Layout/IndentationConsistency:
+  EnforcedStyle: 'indented_internal_methods'
+
+Layout/LineLength:
+  Max: 80
+
+Style/Documentation:
+  Enabled: false

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class User
   include ActiveModel::Model
 
@@ -5,10 +7,9 @@ class User
 
   attr_accessor :email
 
-  def self.find_by_email(email)
-  end
+  def self.find_by_email(email); end
 
-  def self.employees(type = nil)
+  def self.employees(_type = nil)
     []
   end
 end

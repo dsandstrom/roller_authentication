@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module RollerAuthentication
   module ApplicationHelper
     attr_accessor :current_user

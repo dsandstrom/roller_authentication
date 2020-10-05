@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module RollerAuthentication
   class ApplicationController < ActionController::Base
     include ApplicationHelper
