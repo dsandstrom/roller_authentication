@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.summary     = 'Summary of RollerAuthentication.'
   spec.description = 'Description of RollerAuthentication.'
   spec.license     = 'MIT'
+  spec.required_ruby_version = '> 2.7'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the
   # 'allowed_push_host' to allow pushing to a single host or delete this section
