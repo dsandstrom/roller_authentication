@@ -1,5 +1,5 @@
 # RollerAuthentication
-Simple Authentication Gem for use in test and development enviroments.
+Simple Authentication Gem for use in test and development environments.
 
 Made for https://github.com/dsandstrom/task_roller
 
