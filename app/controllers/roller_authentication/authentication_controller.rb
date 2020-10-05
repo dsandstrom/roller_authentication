@@ -5,10 +5,12 @@ module RollerAuthentication
     skip_before_action :authenticate
     before_action :set_users, only: %i[login verify]
     before_action :set_user_options, only: :login
-    before_action :set_authenticator, only: %i[verify logout]
+    before_action :set_authenticator
 
     def login
-      # TODO: redirect_to main_app.root_url if current_user
+      if @authenticator&.authenticate
+        redirect_to main_app.root_url, alert: 'Already logged in.'
+      end
     end
 
     def verify
