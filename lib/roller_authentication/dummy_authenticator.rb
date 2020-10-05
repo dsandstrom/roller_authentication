@@ -4,8 +4,6 @@ module RollerAuthentication
   class DummyAuthenticator
     SESSION_KEY = :current_user
 
-    # TODO: remove need to pass in cookies/session
-    # TODO: use session instead
     attr_accessor :users, :session
 
     def initialize(args)
