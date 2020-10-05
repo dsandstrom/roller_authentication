@@ -1,5 +1,7 @@
 # RollerAuthentication
-Short description and motivation.
+Simple Authentication Gem for use in test and development enviroments.
+
+Made for https://github.com/dsandstrom/task_roller
 
 ## Usage
 How to use my plugin.
@@ -8,7 +10,7 @@ How to use my plugin.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'roller_authentication'
+gem 'roller_authentication', github: 'dsandstrom/roller_authentication
 ```
 
 And then execute:
