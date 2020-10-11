@@ -1,7 +1,11 @@
+name: "Ruby Test"
+
+on: push
+
 jobs:
   ruby_test:
-    name: 'Ruby Test'
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
