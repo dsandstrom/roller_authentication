@@ -1,6 +1,10 @@
 # RollerAuthentication
 Simple Authentication Gem for use in test and development environments.
 
+[![Ruby Tests Actions Status](https://github.com/dsandstrom/roller_authentication/workflows/Ruby%20Tests/badge.svg)](https://github.com/dsandstrom/roller_authentication/actions?query=workflow%3A%22Ruby+Tests%22)
+
+[![Rubocop Actions Status](https://github.com/dsandstrom/roller_authentication/workflows/Rubocop/badge.svg)](https://github.com/dsandstrom/roller_authentication/actions?query=workflow%3ARubocop)
+
 Made for https://github.com/dsandstrom/task_roller
 
 ## Usage
