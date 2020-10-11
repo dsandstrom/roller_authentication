@@ -6,7 +6,7 @@ module RollerAuthentication
 
     def authenticate
       authenticator = DummyAuthenticator.new(
-        users: RollerAuthentication.config.users,
+        users: RollerAuthentication.config.user_class.employees,
         session: session
       )
 

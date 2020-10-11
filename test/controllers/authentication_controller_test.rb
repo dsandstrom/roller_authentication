@@ -4,7 +4,7 @@ require 'test_helper'
 
 class AuthenticationControllerTest < ActionDispatch::IntegrationTest
   setup do
-    RollerAuthentication.config.users = User
+    RollerAuthentication.config.user_class = User
   end
 
   # main_app.root_url doesn't work, still uses mount path

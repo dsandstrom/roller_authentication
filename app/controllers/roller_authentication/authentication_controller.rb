@@ -30,7 +30,7 @@ module RollerAuthentication
     private
 
       def set_users
-        @users = RollerAuthentication.config.users
+        @users = RollerAuthentication.config.user_class.employees
       end
 
       def set_user_options
@@ -45,7 +45,9 @@ module RollerAuthentication
       end
 
       def users_for_type(type)
-        @users.employees(type).map { |u| [u.name_and_email, u.email] }
+        RollerAuthentication
+          .config.user_class
+          .employees(type).map { |u| [u.name_and_email, u.email] }
       end
   end
 end
