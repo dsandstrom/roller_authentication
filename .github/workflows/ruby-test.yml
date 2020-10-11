@@ -1,9 +1,9 @@
-name: "Ruby Test"
+name: "Ruby"
 
 on: push
 
 jobs:
-  ruby_test:
+  test:
     runs-on: ubuntu-latest
 
     steps:
