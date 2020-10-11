@@ -4,9 +4,10 @@ on: push
 
 jobs:
   ruby_test:
+    runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-ruby@v1
-          with:
-            ruby-version: '2.7'
-        - run: bin/rails test
+    - uses: actions/checkout@v2
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.7'
+    - run: bin/rails test
