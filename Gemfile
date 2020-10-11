@@ -14,4 +14,4 @@ gemspec
 # your gem to rubygems.org.
 
 # To use a debugger
-gem 'byebug', '~> 11.1', group: %i[development test]
+# gem 'byebug', '~> 11.1', group: %i[development test]
