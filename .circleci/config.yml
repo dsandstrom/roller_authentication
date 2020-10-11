@@ -35,6 +35,9 @@ commands:
         default: '2.1.4'
         type: string
     steps:
+      - run:
+        name: Install Sqlite library
+        command: 'apt-get install libsqlite3-dev'
       - restore_cache:
           name: Restore Ruby Gems Cache
           keys:
