@@ -1,5 +1,5 @@
 # RollerAuthentication
-Simple Authentication Gem for use in test and development environments.
+Simple authentication gem for test and development environments.
 
 [![Ruby Tests Actions Status](https://github.com/dsandstrom/roller_authentication/workflows/Ruby%20Tests/badge.svg)](https://github.com/dsandstrom/roller_authentication/actions?query=workflow%3A%22Ruby+Tests%22)
 
