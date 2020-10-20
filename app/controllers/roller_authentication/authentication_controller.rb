@@ -2,7 +2,6 @@
 
 module RollerAuthentication
   class AuthenticationController < ApplicationController
-    skip_before_action :authenticate
     before_action :set_users, only: %i[login verify]
     before_action :set_user_options, only: :login
     before_action :set_authenticator
