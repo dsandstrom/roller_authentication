@@ -5,5 +5,7 @@ module RollerAuthentication
     include ApplicationHelper
 
     protect_from_forgery with: :exception
+
+    layout 'layouts/application'
   end
 end
