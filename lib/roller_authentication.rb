@@ -21,5 +21,5 @@ end
 
 ActiveSupport.on_load(:action_controller_base) do
   prepend RollerAuthentication::ApplicationHelper
-  helper_method :current_user
+  helper_method :current_user, :user_signed_in?
 end
