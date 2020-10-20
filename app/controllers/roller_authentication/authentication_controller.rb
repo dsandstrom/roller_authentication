@@ -28,6 +28,10 @@ module RollerAuthentication
 
     private
 
+      def authenticate
+        # skip_before_action :authenticate
+      end
+
       def set_users
         @users = RollerAuthentication.config.user_class.employees
       end
