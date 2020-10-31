@@ -20,10 +20,9 @@ module RollerAuthentication
       current_user.present?
     end
 
-    # TODO: test
     def authentication_controller?
-      params[:controller] == 'roller_authentication/authentication'
       # || devise_controller?
+      params[:controller] == 'roller_authentication/authentication'
     end
   end
 end
