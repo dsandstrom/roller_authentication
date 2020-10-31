@@ -15,13 +15,12 @@ module RollerAuthentication
       redirect_to roller_authentication.login_url unless current_user
     end
 
-    # TODO: test user_signed_in?
     def user_signed_in?
       current_user.present?
     end
 
     def authentication_controller?
-      # || devise_controller?
+      # TODO: add || devise_controller?
       params[:controller] == 'roller_authentication/authentication'
     end
   end
