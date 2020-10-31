@@ -19,5 +19,11 @@ module RollerAuthentication
     def user_signed_in?
       current_user.present?
     end
+
+    # TODO: test
+    def authentication_controller?
+      params[:controller] == 'roller_authentication/authentication'
+      # || devise_controller?
+    end
   end
 end
