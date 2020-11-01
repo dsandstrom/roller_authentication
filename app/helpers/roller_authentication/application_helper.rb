@@ -6,11 +6,6 @@ module RollerAuthentication
 
     # TODO: test authenticate
     def authenticate
-      authenticator = DummyAuthenticator.new(
-        users: RollerAuthentication.config.user_class.employees,
-        session: session
-      )
-
       @current_user = authenticator.authenticate
       redirect_to roller_authentication.login_url unless current_user
     end
@@ -23,5 +18,14 @@ module RollerAuthentication
       # TODO: add || devise_controller?
       params[:controller] == 'roller_authentication/authentication'
     end
+
+    private
+
+      def authenticator
+        @authenticator ||= DummyAuthenticator.new(
+          users: RollerAuthentication.config.user_class.employees,
+          session: session
+        )
+      end
   end
 end
