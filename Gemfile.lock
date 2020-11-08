@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    roller_authentication (0.8.1)
+    roller_authentication (0.8.2)
       rails (~> 6.0.3, >= 6.0.3.3)
 
 GEM
