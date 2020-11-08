@@ -22,7 +22,7 @@ module RollerAuthentication
     private
 
       def authenticator
-        @authenticator ||= DummyAuthenticator.new(
+        DummyAuthenticator.new(
           users: RollerAuthentication.config.user_class.employees,
           session: session
         )
