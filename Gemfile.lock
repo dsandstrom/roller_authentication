@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    roller_authentication (0.8.0)
+    roller_authentication (0.8.1)
       rails (~> 6.0.3, >= 6.0.3.3)
 
 GEM
@@ -125,7 +125,7 @@ GEM
     sqlite3 (1.4.2)
     thor (1.0.1)
     thread_safe (0.3.6)
-    tzinfo (1.2.7)
+    tzinfo (1.2.8)
       thread_safe (~> 0.1)
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
