@@ -38,7 +38,7 @@ module RollerAuthentication
 
       def set_user_options
         @user_options =
-          User::VALID_EMPLOYEE_TYPES.map do |type|
+          User::VALID_EMPLOYEE_TYPES.reverse.map do |type|
             [type, users_for_type(type)]
           end
       end
